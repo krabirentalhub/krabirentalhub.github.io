@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krabi Rental Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body {
+    background:#0b0b0b;
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+/* NAV */
+nav {
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    padding:15px 0;
+    text-align:center;
+    z-index:999;
+}
+
+nav a {
+    color:#fff;
+    margin:0 20px;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:.3s;
+}
+nav a:hover {color:gold;}
+
+/* HERO */
+.hero {
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size:70px;
+    letter-spacing:3px;
+    animation:fadeUp 1s ease;
+}
+
+.hero p {
+    margin-top:10px;
+    opacity:.8;
+    animation:fadeUp 1.5s ease;
+}
+
+/* SECTION */
+.section {
+    padding:120px 20px;
+    text-align:center;
+}
+
+/* CARDS */
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card {
+    width:260px;
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover {
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3 {
+    padding:15px;
+}
+
+/* CONTACT */
+.contact {
+    background:#000;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {opacity:0; transform:translateY(30px);}
+    to {opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#motorbike">Motorbike Rental</a>
+<a href="#car">Car Rental</a>
+<a href="#airport">Airport Transfer</a>
+<a href="#tours">Tours</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+<div>
+<h1>KRABI RENTAL HUB</h1>
+<p>Motorbike • Car • Tours</p>
+</div>
+</section>
+
+<section id="motorbike" class="section">
+<h2>Motorbike Rental</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+<h3>Honda Click 125</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65">
+<h3>Yamaha NMAX</h3>
+</div>
+</div>
+</section>
+
+<section id="car" class="section">
+<h2>Car Rental</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<h3>Toyota Yaris</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8">
+<h3>Honda City</h3>
+</div>
+</div>
+</section>
+
+<section id="airport" class="section">
+<h2>Airport Transfer</h2>
+<p>Private airport pickup & drop-off</p>
+</section>
+
+<section id="tours" class="section">
+<h2>Tours</h2>
+<p>Island tours • Jungle tours • Boat trips</p>
+</section>
+
+<section id="contact" class="section contact">
+<h2>Contact</h2>
+<p>WhatsApp: +66XXXXXXXXX</p>
+</section>
+
+</body>
+</html>
